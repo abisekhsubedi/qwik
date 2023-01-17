@@ -5,18 +5,22 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --qwik-dark-blue: #006ce9;
+/* :root {
+  --qwik-dark-blue: @apply bg-sky-800;
   --qwik-light-blue: #18b6f6;
   --qwik-light-purple: #ac7ff4;
   --qwik-dark-purple: #713fc2;
-}
+} */
 
 body {
-  background-color: #fafafa;
+  @apply bg-slate-50 bg-gradient-to-tr from-slate-50 to-gray-100;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  padding: 20px 20px 40px 20px;
+  @apply px-2 py-4;
+  @apply w-screen h-screen;
 }
 
 main {
